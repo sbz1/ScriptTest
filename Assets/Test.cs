@@ -3,31 +3,23 @@ using System.Collections;
 
 public class Test : MonoBehaviour
 {
-    private void Start()
+
+    // Use this for initialization
+    void Start()
     {
-        int[] array = new int[5];
-
-
-        array[4] = 715;
-        array[3] = 677;
-        array[2] = 147;
-        array[1] = 362;
-        array[0] = 521;
        
-
-        for (int i = 0; i < 5; i++)
+        int[]  array = new[] { 1, 2, 3, 4, 5 };
+        for (int i = array.Length - 1; 0 <= i; i--)
         {
             Debug.Log(array[i]);
+         
         }
+    }
 
-
-
-
-
-}
-
+    // Update is called once per frame
     void Update()
     {
 
     }
 }
+
